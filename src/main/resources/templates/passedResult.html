@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" type="text/css" media="all"
+          href="#" th:href="@{/css/creditForm.css}"/>
+    <title>CreditPredict</title>
+</head>
+<body>
+<div class="dark-matter">
+    <h2 class="result" id="failed">Result: the client may subscribed the term deposit </h2>
+    <h4 class="result">Here is the main information: </h4>
+    <div class="result">
+        <p th:text="'name: ' + ${user.userName}"/>
+        <p th:text="'age: ' + ${user.age}"/>
+        <p th:text="'job: ' + ${user.job}"/>
+        <p th:text="'marital: ' + ${user.marital}"/>
+        <p th:text="'education: ' + ${user.education}"/>
+        <p th:text="'balance: ' + ${user.balance}"/>
+    </div>
+
+
+    <a class="button" href="/credit">Submit another message</a>
+
+</div>
+
+</body>
+</html>
